@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+	<meta charset="utf-8">
+	<title>Flower Land</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/menu.css">
+	
+</head>
+
+<body>
+<div class="wrap-body">
+	<header class="zerogrid">
+		<div class="logo">
+			<a href="#">Flower Lend</a>
+		</div>
+		<div id='cssmenu' class="align-center">
+			<ul>
+			   <li><a href='index.html'><span>Главная</span></a></li>
+			   <li class="has-sub active"><a href='about.html'><span>О нас</span></a>
+				 <ul >
+					 <li class='has-sub'><a href='contact.html'><span>Контакты</span></a></li>
+				</ul>
+				<li><a href='menu.html'><span>Наши работы</span></a></li>
+			 </ul>
+		</div>
+	</header>
+		<section id="container">
+			<div class="wrap-container clearfix">
+				<div id="main-content">
+					<div class="wrap-content zerogrid ">
+						<div class='embed-container maps'>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2751.6327697563215!2d23.690134151294476!3d52.0901759360006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6efc2f2aa935a31!2z0JrQvtC70LvQtdC00LYg0LHQuNC30L3QtdGB0LAg0Lgg0L_RgNCw0LLQsA!5e0!3m2!1sru!2sby!4v1522340978093" width="100%" height="370px" frameborder="0" style="border:0" ></iframe>
+						</div>
+						<article class="background-gray">
+							<div class="art-header">
+								<h2>Свяжитесь с нами</h2>
+							</div>
+							<div class="art-content">
+								<div class="row">
+									<div id="contact_form">
+										<form name="form1" id="ff" method="post" action="contact.php">
+											<label class="row">
+												<div class="col-1-2">
+													<div class="wrap-col">
+														<input type="text" name="name" id="name" placeholder="Введите имя" required="required" />
+													</div>
+												</div>
+												<div class="col-1-2">
+													<div class="wrap-col">
+														<input type="email" name="email" id="email" placeholder="Введите email" required="required" />
+													</div>
+												</div>
+											</label>
+											<label class="row">
+												<div class="wrap-col">
+													<input type="text" name="subject" id="subject" placeholder="Тема" required="required" />
+												</div>
+											</label>
+											<label class="row">
+												<div class="wrap-col">
+													<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+													placeholder="Сообщение"></textarea>
+												</div>
+											</label>
+											<center><input class="sendButton" type="submit" name="Submit" value="Отправить"></center>
+										</form>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="wrap-footer">
+				<div class="zerogrid">
+					<div class="row">
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<p>Copyright - Designed by Lesak Irina</p>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<ul class="social-buttons">
+									<li><a href="#"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<script>
+		$('.maps').click(function () {
+		$('.maps iframe').css("pointer-events", "auto");
+	});
+
+	$( ".maps" ).mouseleave(function() {
+	  $('.maps iframe').css("pointer-events", "none"); 
+	});
+	</script>
+	
+</div>
+</body>
+</html>
